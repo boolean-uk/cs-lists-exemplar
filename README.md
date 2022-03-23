@@ -125,13 +125,13 @@ const list = makeCountDown(10);
 console.log("Countdown list", list);
 ```
 
-The `console.log`, above, produces the linked list shown in Figure 3.
+`console.log("Countdown list", list)` produces the linked list shown in Figure 2.
 
 ![](./assets/countdownLinkedList.png)
 
-_Figure 3: The countdown linked list_
+_Figure 2: The countdown linked list_
 
-`makeCountDown` shows the general approach for creating a linked list - first, we create a node to hold some data, then we form the list by linking that node to another by updating their `next` reference. 
+`makeCountDown` shows the general approach for creating a linked list - first, we create a node to hold some data, then we form the list by linking that node to another by updating their `next` reference.
 
 Now, if we want to print the list, we just need to traverse the _next_ references:
 
